@@ -21,7 +21,7 @@ class Main extends CI_Controller
             $data['apps'] = $_SESSION['apps'];
             $data['access'] = $_SESSION['access'];
             $this->load->view('template/header',$data);
-            $this->load->view('main/Desktop', $data);
+            $this->load->view('main/desktop', $data);
             $this->load->view('template/footer');
         }
         else
