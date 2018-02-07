@@ -1,0 +1,65 @@
+** - issues
+Rebuild everything as used by buisness now
+Inventory
+Purchasing Officer - Create Purcashe Request Note( or Items to be delivered to site) (add new Items for now)
+Good recived by site - Techinical officer create Goods Recived Note
+	**reciving an item not requested
+
+Track Work Done by BOQ
+-material usage
+	** items used not in stock
+	** too much items to track
+
+-labour head count(include sub if can)
+	** half leabour counts - half
+	** labour rates.
+
+- stage completion
+	** track stage cost - and percentage spent on it
+
+** No stage to track
+Each BOQ uploaded as a different parts of a project
+
+----FORMS AND APPS
+-f- Pruchase request form
+		- project id
+		- item
+		- no
+		- cost
+		o supplier
+		o PO no
+
+-a- Projects
+	-af- Goods recive note (project id)
+		x on recived item
+			- supplier
+			- po number
+			- item
+			- ammount
+			x pick ammount
+		confirm and generate document
+			- Date
+			- User
+			- project id --> update inventory
+	-aa- Daily report
+		- pick BOQ
+			- pick level
+
+			--items used(issue goods)
+				--ammount
+			--men worked (sub contractor)
+				--ammount
+			--mark as complete
+
+	-aa- Progress
+		--Records
+			--goods issue notes
+			--work done notes
+		-- BOQ
+			- BOQ aggegates
+				-- level aggragates
+
+	-aa- Stock
+		-item
+			-ammount
+		-pending PRN items
