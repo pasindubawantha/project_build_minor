@@ -12,21 +12,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href= "<?php echo base_url(); ?>/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href= "<?php echo base_url(); ?>assets/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/ionicons.min.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/AdminLTE.min.css">
   <!-- bootstrap datepicker -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap-datepicker.min.css">
   <!-- Applying skin-black-->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/skin-black.min.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/skin-black.min.css">
     <!-- DataTables -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/dataTables.bootstrap.min.css">
   <!-- Select2 -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/select2.min.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/select2.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -103,7 +103,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div-->
                 <div class="pull-right">
-                  <a href="<?= base_url(); ?>/Main/logout" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="<?= base_url(); ?>Main/logout" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
@@ -159,7 +159,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <ul class="treeview-menu">
         <?php
         foreach ($apps as $app) {
-          echo '<li><a href="'.base_url().'/'.$app['controller_name'].'"><i class="'.$app['icon'].'"></i>'.$app['name'].'</a></li>';
+          echo '<li><a href="'.base_url().$app['controller_name'].'"><i class="'.$app['icon'].'"></i>'.$app['name'].'</a></li>';
         }
         ?>
           </ul>

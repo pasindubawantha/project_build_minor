@@ -96,27 +96,27 @@
 <!-- REQUIRED JS SCRIPTS -->
 
 <!-- jQuery 3 -->
-<script src="<?php echo base_url(); ?>/assets/js/jquery.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="<?php echo base_url(); ?>/assets/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
 <!-- bootstrap datepicker -->
-<script src="<?php echo base_url(); ?>/assets/js/bootstrap-datepicker.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/bootstrap-datepicker.min.js"></script>
 <!-- SlimScroll -->
-<script src="<?php echo base_url(); ?>/assets/js/jquery.slimscroll.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
-<script src="<?php echo base_url(); ?>/assets/js/fastclick.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/fastclick.js"></script>
 <!-- AdminLTE App -->
-<script src="<?php echo base_url(); ?>/assets/js/adminlte.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/adminlte.min.js"></script>
 <!-- DataTables -->
-<script src="<?php echo base_url(); ?>/assets/js/jquery.dataTables.min.js"></script>
-<script src="<?php echo base_url(); ?>/assets/js/dataTables.bootstrap.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/jquery.dataTables.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/dataTables.bootstrap.min.js"></script>
 <!-- Select2 -->
-<script src="<?php echo base_url(); ?>/assets/js/select2.full.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/select2.full.min.js"></script>
 <!-- highcharts -- >
 <!--[if lt IE 9]>
-<script src="<?php echo base_url(); ?>/assets/js/oldie.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/oldie.js"></script>
 <![endif]-->
-<script src="<?php echo base_url(); ?>/assets/js/Chart.bundle.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/Chart.bundle.min.js"></script>
 <!-- Page script -->
 <script>
   $(document).ready(function () {
@@ -196,7 +196,36 @@
         }
       }
     ?>
+
+    //group add limit
+    var maxGroup = 10;
+
+    //add more fields group
+    $(".addMore").click(function(){
+        if($('body').find('.fieldGroup').length < maxGroup){
+
+            var fieldHTML = '<div class="form-group fieldGroup">'+$(".fieldGroupCopy").html()+'</div>';
+            $('body').find('.fieldGroup:last').after(fieldHTML);
+            var select2s = $('body').find('.select2s');
+            var sl = select2s.length;
+            $('body').find(".select2s:eq("+(sl-3)+")").select2();
+            $('body').find(".select2s:eq("+(sl-4)+")").select2();
+            // $('body').find(".select2s:eq("+(sl-3)+")").removeClass("select2s");
+            // $('body').find(".select2s:eq("+(sl-4)+")").removeClass("select2s");
+            // console.log(select2s);
+            // $('.select2').select2();
+
+        }else{
+            alert('Maximum '+maxGroup+' groups are allowed.');
+        }
+    });
+
+    //remove fields group
+    $("body").on("click",".remove",function(){
+        $(this).parents(".fieldGroup").remove();
+    });
   });
+
 </script>
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.

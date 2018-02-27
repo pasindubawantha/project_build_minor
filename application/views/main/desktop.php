@@ -4,7 +4,7 @@
     {
       echo '
             <div class="col-md-3 col-sm-6 col-xs-12">
-              <a href="'.base_url().'/Project" >
+              <a href="'.base_url().'Project" >
                 <div class="info-box">
                   <span class="info-box-icon bg-aqua"><i class="fa fa-fw fa-futbol-o"></i></span>
                    <div class="info-box-content">
@@ -19,7 +19,7 @@
     {
       echo '
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <a href="'.base_url().'/Inventory" >
+        <a href="'.base_url().'Inventory" >
           <div class="info-box">
             <span class="info-box-icon bg-aqua"><i class="fa fa-fw fa-cubes"></i></span>
             <div class="info-box-content">
@@ -34,7 +34,7 @@
     {
       echo '
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <a href="'.base_url().'/Supplier" >
+        <a href="'.base_url().'Supplier" >
           <div class="info-box">
             <span class="info-box-icon bg-aqua"><i class="fa fa-fw fa-shopping-cart"></i></span>
             <div class="info-box-content">
@@ -49,7 +49,7 @@
     {
       echo '
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <a href="'.base_url().'/Contractor" >
+        <a href="'.base_url().'Contractor" >
           <div class="info-box">
             <span class="info-box-icon bg-aqua"><i class="fa fa-fw fa-shopping-cart"></i></span>
             <div class="info-box-content">
@@ -64,7 +64,7 @@
     {
       echo '
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <a href="'.base_url().'/User" >
+        <a href="'.base_url().'User" >
           <div class="info-box">
             <span class="info-box-icon bg-aqua"><i class="fa fa-fw fa-users"></i></span>
             <div class="info-box-content">
@@ -79,7 +79,7 @@
     {
       echo '
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <a href="'.base_url().'/PRN" >
+        <a href="'.base_url().'PRN" >
           <div class="info-box">
             <span class="info-box-icon bg-aqua"><i class="fa fa-fw fa-shopping-cart"></i></span>
             <div class="info-box-content">

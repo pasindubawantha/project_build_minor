@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-lg-3 col-xs-6">
-    <a href="<?=base_url();?>/Project/new" class="small-box-footer">
+    <a href="<?=base_url();?>Project/new" class="small-box-footer">
       <div class="small-box bg-aqua">
         <div class="inner">
           <h3>Create</h3>
@@ -45,7 +45,7 @@
                 echo '<td>'.$project->id.'</td>';
                 echo '<td>'.$project->name.'</td>';
                 echo '<td>'.$project->address.'</td>';
-                echo '<td><a href="'.base_url().'/Project/index/'.$project->id.'"><button type="button" class="btn btn-block btn-info">Pick</button></a></td>';
+                echo '<td><a href="'.base_url().'Project/index/'.$project->id.'"><button type="button" class="btn btn-block btn-info">Pick</button></a></td>';
                 echo '</tr>';
               }
             ?>

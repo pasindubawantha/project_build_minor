@@ -21,18 +21,24 @@
 		    </div>
 	    <!-- /.box-header -->
 	    <!-- form start -->
-		    <form role="form" action="<?= base_url(); ?>/Project/boq_new/<?= $project_id;?>" method="post" enctype="multipart/form-data">
+		    <form role="form" action="<?= base_url(); ?>Project/boq_new/<?= $project_id;?>" method="post" enctype="multipart/form-data">
+		      <div class="box-body">
+		        <div class="form-group">
+		          <label>Description</label>
+		          <input name="description" type="text" required>
+		        </div>
+		      </div>
 		      <div class="box-body">
 		        <div class="form-group">
 		          <label>File input</label>
 		          <input name="boq_new_file" id="boq_new_file" type="file">
 		          <p class="help-block">Upload your cvs file here.</p>
 		        </div>
-		        </div>
+		      </div>
 		      <!-- /.box-body -->
 		      <div class="box-footer">
 		        <button name="upload" type="submit"  class="btn btn-primary">Submit</button>
-		        <a href="<?= base_url(); ?>/assets/downloads/boq_new_template.csv" download class="btn pull-right btn-success">Download CVS template
+		        <a href="<?= base_url(); ?>assets/downloads/boq_new_template.csv" download class="btn pull-right btn-success">Download CVS template
 		        </a>
 		      </div>
 		    </form>
